@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Inter:wght@100&family=Questrial&family=Roboto:wght@100&family=Space+Mono&family=Ubuntu:wght@500&display=swap');
+
+.display-box{
+    background-color: #1f2a48;
+    padding: 2%;
+    width: 50vw;
+    margin-left:25vw;
+    margin-top: 5vh;
+    /* border: 2px solid red; */
+    border-radius: 2%;
+    font-family: 'Space Mono', monospace;
+}
+
+.upper{
+    background-color: #1f2a48;
+    display: flex;
+    /* border: 2px solid green; */
+    color: #e0f3ff;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 20%;
+    height: 25%;
+    border-radius: 100px;
+}
+
+.three-det{
+    background-color: #1f2a48;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 25vw;
+    padding-left:2%;
+}
+
+.name{
+    font-size: large;
+    font-weight: 600;
+    background-color: #1f2a48;
+}
+.login{
+    color: #155099;
+    background-color: #1f2a48;
+    padding-top: 1vh;
+}
+.bio{
+    font-size: medium;
+    padding-top: 5vh;
+    color: #858c9f;
+    background-color: #1f2a48;
+}
+
+.date{
+    background-color: #1f2a48;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: whitesmoke;
+    /* border: 2px solid red; */
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: 2vh;
+    height: 11vh;
+    padding-top: 2vh;
+}
+
+.repos, .Followers, .Following{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+.respos a, .followers a, .following
+ a{
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+ }
+ 
+ .lower{
+    background-color: #1f2a48;
+}
+
+.links{
+    /* border: 2px solid red; */
+    margin-left: 20%;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1f2a48
+}
+
+.a1, .a2{
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2a48
+}
+.a2{
+    width: 13vw;
+}
+.location, .twitter, .company, .blog{
+    background-color: #1f2a48;
+    color: white;
+}
+.links img{
+    width: 20px;
+    height: 20px;
+    background-color: #1f2a48;
+}
+.links span{
+    background-color: #1f2a48;
+    padding-left: 5px;
+}
+.not{
+    color: #858c9f;
+}

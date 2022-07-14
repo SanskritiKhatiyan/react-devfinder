@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Inter:wght@100&family=Questrial&family=Roboto:wght@100&family=Space+Mono&family=Ubuntu:wght@500&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #141c2f;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  margin-top: 10vh;
+  margin-left: 25vw;
+  width: 54vw;
+  color: #e0f3ff;
+  padding: 3px;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace;
+}
+
+.devfinder{
+  letter-spacing: 4px;
+}
+
+.theme{
+  display: flex;
+  background-color: #1f2a48;
+}
+
+.theme img{
+  padding-left: 8px;
+}
