@@ -13,6 +13,29 @@ const Search = (passUserdata) => {
   const [dropDownOpen, setDropDownOpen] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // const urlchecking = new URLSearchParams();
+  // urlchecking.get();
+  // console.log(urlchecking.get());
+
+  useEffect(() => {
+    const urltaken = document.location.search;
+    console.log(urltaken);
+    let urlchecking = new URLSearchParams(urltaken);
+    let check = urlchecking.get("q");
+    console.log(check);
+    if (check != null) {
+      axios
+        .get(`https://api.github.com/users/${check}`)
+        .then((response) => {
+          console.log(response);
+          passUserdata.onSubmit(response);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, []);
+
   const onChangeHandler = (e) => {
     if (e.target.value.length > 0) {
       setDropDownOpen(true);
