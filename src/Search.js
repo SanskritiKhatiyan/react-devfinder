@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import "./Search.css";
+import "./SearchMobile.css";
 import "./suggestions.css";
 import debounce from "lodash.debounce";
 import SearchIcon from "./images/icons8-search.svg";
@@ -22,7 +23,6 @@ const Search = (passUserdata) => {
     const param = new URLSearchParams();
     param.set("q", e.target.value);
     setSearchParams(param);
-    // debouncedChangeHandler();
   };
 
   useEffect(() => {

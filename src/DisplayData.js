@@ -1,5 +1,6 @@
 import React from "react";
 import "./DisplayData.css";
+import "./DisplayDataMobile.css";
 import loc from "./images/location-svgrepo-com.svg";
 import twi from "./images/twitter-svgrepo-com.svg";
 import li from "./images/link-svgrepo-com.svg";

@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Inter:wght@100&family=Questrial&family=Roboto:wght@100&family=Space+Mono&family=Ubuntu:wght@500&display=swap');
 
+@media screen and (max-width: 600px){
 .display-box{
     background-color: #1f2a48;
-    padding: 2%;
-    width: 50vw;
-    margin-left:25vw;
+    padding: 4%;
+    width: 80vw;
+    margin-left:6vw;
     margin-top: 5vh;
     /* border: 2px solid red; */
-    border-radius: 2%;
+    border-radius: 3%;
     font-family: 'Space Mono', monospace;
 }
 
 .upper{
     background-color: #1f2a48;
     display: flex;
+    flex-direction: column;
     /* border: 2px solid green; */
     color: #e0f3ff;
     justify-content: space-between;
 }
 
 .avatar{
-    width: 20%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
     border-radius: 100px;
 }
 
@@ -38,21 +40,38 @@
     font-size: large;
     font-weight: 600;
     background-color: #1f2a48;
+    position: absolute;
+    /* border: 2px solid yellow; */
+    left: 40%;
+    top: 33%;
+    z-index: 100;
 }
 .login{
     color: #155099;
     background-color: #1f2a48;
     padding-top: 1vh;
+    position: absolute;
+    /* border: 2px solid yellow; */
+    left: 40%;
+    top: 35%;
 }
 .bio{
     font-size: medium;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
+    width: 80vw;
+    height: 5vh;
     color: #858c9f;
     background-color: #1f2a48;
+    
+    
 }
 
 .date{
     background-color: #1f2a48;
+    position: absolute;
+    /* border: 2px solid yellow; */
+    left: 40%;
+    top: 39%;
 }
 
 .numbers{
@@ -61,10 +80,10 @@
     justify-content: space-around;
     color: whitesmoke;
     /* border: 2px solid red; */
-    margin-left: 20%;
+    margin-left: 1%;
     border-radius: 10px;
     margin-top: 2vh;
-    height: 11vh;
+    height: 9vh;
     padding-top: 2vh;
 }
 
@@ -86,25 +105,31 @@
 
 .links{
     /* border: 2px solid red; */
-    margin-left: 20%;
+    margin-left: 2%;
     margin-top: 3vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: #1f2a48
+    background-color: #1f2a48;
+
 }
 
 .a1, .a2{
     display: flex;
     flex-direction: column;
-    background-color: #1f2a48
+    background-color: #1f2a48;
+    /* border: 1px solid yellow; */
 }
 .a2{
-    width: 13vw;
+    margin-top: 2%;
+    width: 75vw;
+    margin-bottom: 5%;
+    /* border: 5px solid green; */
 }
 .location, .twitter, .company, .blog{
     background-color: #1f2a48;
     color: white;
+    margin-bottom: 1%;
 }
 .links img{
     width: 20px;
@@ -119,3 +144,4 @@
     color: #858c9f;
 }
 
+}

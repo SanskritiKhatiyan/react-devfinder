@@ -1,4 +1,5 @@
 import "./App.css";
+import "./AppMobile.css";
 import Search from "./Search";
 import DisplayData from "./DisplayData";
 import { useState } from "react";
