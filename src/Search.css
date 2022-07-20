@@ -23,6 +23,7 @@
     color: #e0f3ff;
     font-family: 'Ubuntu', sans-serif;
     font-size: medium;
+    cursor: pointer;
 }
 
 .userInput{

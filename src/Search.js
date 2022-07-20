@@ -32,6 +32,7 @@ const Search = (passUserdata) => {
         })
         .catch((err) => {
           console.log(err);
+          // alert("OOPs!!!API not working. Try after sometime");
         });
     }
   }, []);
@@ -67,6 +68,7 @@ const Search = (passUserdata) => {
       })
       .catch((err) => {
         console.log(err);
+        // alert("OOPs!!!API not working. Try after sometime");
       });
   }, [userApi]);
 
@@ -82,6 +84,7 @@ const Search = (passUserdata) => {
         })
         .catch((err) => {
           console.log(err);
+          // alert("OOPs!!!API not working.  Try after sometime");
         });
     }, 200),
     []
@@ -90,6 +93,8 @@ const Search = (passUserdata) => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     // setUsername("");
+    setUserApi(e.target.form[0].value);
+    console.log(e.target.form[0].value);
     setDropDownOpen(false);
     setSuggestions([]);
   };
@@ -103,7 +108,7 @@ const Search = (passUserdata) => {
 
   return (
     <>
-      <form onSubmit={onSubmitHandler}>
+      <form onClick={onSubmitHandler}>
         <div className="search">
           <img src={SearchIcon} alt="Search Icon" />
           <input
